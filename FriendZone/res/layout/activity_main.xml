@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_background"
+    android:gravity="top"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+    
+    <ListView 
+        android:id="@+id/listViewNearbyDevices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButtonNearbyFriend"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="10dp"
+     
+        ></ListView>
+   
+    <ImageButton
+        android:id="@+id/imageButtonHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+       
+        android:background="@null"
+        android:src="@drawable/help_icon" />
+
+    <ImageButton
+        android:id="@+id/imageButtonOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButtonHelp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@null"
+        android:src="@drawable/button_options" />
+
+    <ImageButton
+        android:id="@+id/imageButtonNearbyFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButtonManageFriends"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@null"
+        android:src="@drawable/button_nearbyfriend" />
+
+    <ImageButton
+        android:id="@+id/imageButtonManageFriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButtonOption"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@null"
+        android:src="@drawable/button_managefriends" />
+    
+
+</RelativeLayout>

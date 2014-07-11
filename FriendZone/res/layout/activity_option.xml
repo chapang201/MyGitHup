@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/allover_background"
+  
+    android:orientation="vertical" >
+ <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+   	android:layout_marginTop="100dp"
+   	android:layout_marginLeft="10dp"
+   	android:layout_marginRight="10dp">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="Application"
+        />
+    <ToggleButton
+        android:id="@+id/toggleButtonApplication"
+        android:layout_toRightOf="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_alignBaseline="@+id/textView1"
+        android:onClick="onClickApplication"
+        />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="20dp" 
+       android:text="Distance (FT)"
+        />
+    <Spinner
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toggleButtonApplication"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_alignLeft="@+id/toggleButtonApplication"
+      	android:layout_alignBaseline="@+id/textView2"
+       
+        />
+ <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="18dp" 
+       android:text="Update Interval (s)"
+        />
+    <Spinner
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_toRightOf="@+id/textView3"
+      	android:layout_alignLeft="@+id/toggleButtonApplication"
+        android:layout_alignBaseline="@+id/textView3"
+        />
+     <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="18dp" 
+       android:text="Notification Delay (min)"
+        />
+     
+    <Spinner
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_alignLeft="@+id/toggleButtonApplication"
+     	android:layout_alignBaseline="@+id/textView4"
+       
+        />
+     <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="23dp" 
+       android:text="Repeat Call Override"
+        />
+     <ToggleButton
+        android:id="@+id/tootleButton2"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_below="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/toggleButtonApplication"
+        android:onClick="onClickRepeatCallOverrie"
+        android:layout_alignBaseline="@+id/textView5"
+        />
+       <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="25dp" 
+       android:text="Priority Contact Override"
+        />
+       <Button
+        android:id="@+id/button1"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_below="@+id/tootleButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/toggleButtonApplication"
+        android:text="Edit"
+        android:layout_alignBaseline="@+id/textView6"
+        />
+        <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="30dp" 
+       android:text="Auto-Responder"
+        />
+       <ToggleButton
+        android:id="@+id/tootleButton3"
+        android:layout_toRightOf="@+id/textView7"
+        android:layout_below="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/toggleButtonApplication"
+        android:onClick="onClickAutoResponder"
+        android:layout_alignBaseline="@+id/textView7"
+        />
+       <Button
+        android:id="@+id/button2"
+        android:layout_toRightOf="@+id/tootleButton3"
+       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:text="Edit"
+        android:layout_alignBaseline="@+id/textView7"
+        />
+       <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_marginTop="30dp" 
+       android:text="Hours of Operation"
+        />
+      <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tootleButton3"
+        android:layout_toRightOf="@+id/textView8"
+       android:layout_alignLeft="@+id/toggleButtonApplication"
+        android:inputType="time"
+        android:layout_alignBaseline="@+id/textView8"
+       
+        />
+       <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_toRightOf="@+id/editText4"
+        android:layout_marginTop="30dp" 
+         android:layout_marginLeft="5dp"
+       android:text="~"
+       android:layout_alignBaseline="@+id/textView8"
+        />
+     <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tootleButton3"
+        android:layout_toRightOf="@+id/textView9"
+        android:layout_marginLeft="5dp"
+        android:inputType="time"
+        android:layout_alignBaseline="@+id/textView8"
+       
+        />
+       <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="30dp" 
+       android:text="Travel Enalbler"
+        />
+     <ToggleButton
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText4"
+        android:layout_toRightOf="@+id/textView10"
+        android:layout_alignLeft="@+id/toggleButtonApplication"
+        android:layout_marginTop="20dp"
+        android:onClick="onClickTravelEnabler"
+        android:layout_alignBaseline="@+id/textView10"
+       
+       />
+      <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView10"
+        android:layout_marginTop="30dp" 
+       android:text="Share Location"
+        />
+      <ToggleButton
+        android:id="@+id/tootleButton4"
+        android:layout_toRightOf="@+id/textView7"
+        android:layout_below="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/toggleButtonApplication"
+        android:onClick="onClickShareLocation"
+        android:layout_alignBaseline="@+id/textView11"
+       />
+       <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView11"
+        android:layout_marginTop="25dp" 
+       android:text="Share Friends"
+        />
+       <ToggleButton
+        android:id="@+id/tootleButton5"
+        android:layout_toRightOf="@+id/textView12"
+        android:layout_below="@+id/tootleButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/toggleButtonApplication"
+        android:onClick="onClickShareFriends"
+        android:layout_alignBaseline="@+id/textView12"
+       />
+    
+       
+      
+ </RelativeLayout>
+ </ScrollView>
+
+
+</ScrollView>

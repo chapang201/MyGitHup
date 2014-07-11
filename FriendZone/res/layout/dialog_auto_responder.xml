@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:orientation="vertical" 
+    android:background="@drawable/allover_background">
+    <TextView 
+        android:id="@+id/textViewAutoResponder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Auto Responder Options"
+        android:layout_centerHorizontal="true"
+        />
+      <TextView 
+        android:id="@+id/textViewCurrentMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAutoResponder"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Current Message"
+        
+        />
+      <EditText
+        android:id="@+id/editTextCurrentMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:layout_below="@+id/textViewCurrentMessage"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+      
+        android:ems="100"
+        android:text="I am with some friends right now but I'll get back to you soon!"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+    <Button
+        android:id="@+id/button_auto_responder_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="Done" 
+        />
+
+  
+
+</RelativeLayout>
